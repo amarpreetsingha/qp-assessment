@@ -1,0 +1,12 @@
+version: '1'
+services:
+  grocery-api:
+    build:
+      dockerfile: Dockerfile
+    image: amarpreetsingha/grocery
+    ports:
+      - 8000
+    networks:
+      - counter-net
+networks:
+  counter-net:
